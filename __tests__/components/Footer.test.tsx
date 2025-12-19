@@ -35,12 +35,6 @@ describe('Footer component', () => {
     expect(links.length).toBeGreaterThan(0)
   })
 
-  it('should display the current year in copyright', () => {
-    render(<Footer />)
-    const currentYear = new Date().getFullYear()
-    expect(screen.getByText(new RegExp(currentYear.toString()))).toBeInTheDocument()
-  })
-
   it('should display organization name and copyright', () => {
     render(<Footer />)
     const currentYear = new Date().getFullYear()
