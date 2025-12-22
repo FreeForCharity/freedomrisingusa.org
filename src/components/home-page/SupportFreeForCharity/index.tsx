@@ -21,7 +21,7 @@ const Index = () => {
   const donationFormProps: ExtendedIframeProps = {
     title: 'Donation form powered by Zeffy',
     style: donationFormStyle,
-    src: 'https://www.zeffy.com/embed/donation-form/free-for-charity-endowment-fund',
+    src: '#donation-form-placeholder-zeffy-url-needed',
     allowpaymentrequest: '',
     allowtransparency: 'true',
   }
