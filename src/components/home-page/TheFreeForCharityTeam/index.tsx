@@ -41,9 +41,9 @@ const index = () => {
           />
           <TeamMemberCard
             imageUrl="/Images/member5.webp"
-            name="[Board Member - TBD]"
+            name="Clarke Moyer"
             title="Member at Large"
-            linkedinUrl="#placeholder-linkedin"
+            linkedinUrl="https://www.linkedin.com/in/clarke-moyer/"
           />
         </div>
       </div>
