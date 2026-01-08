@@ -2,7 +2,45 @@
 
 This document tracks all placeholder content and information needed from the site owners to complete the Freedom Rising USA website.
 
-**Last Updated:** December 22, 2024
+**Last Updated:** January 8, 2025
+
+---
+
+## Recent Cleanup (January 8, 2025)
+
+### Template Content Removed ✅
+
+The following template/Free For Charity remnants have been removed:
+
+1. **Unused FAQ Files** - Removed 2 JSON files with Free For Charity content:
+   - `src/data/faqs/are-you-really-a-charity.json`
+   - `src/data/faqs/what-is-the-organization-aiming-to-accomplish.json`
+
+2. **External Service References** - Removed preconnects to charity-specific services:
+   - GuideStar (charity rating service)
+   - Idealist (nonprofit job board)
+
+3. **Unused UI Components** - Removed 7 template components:
+   - Domain-Card.tsx
+   - BlogCard.tsx
+   - EducationalSitesCard.tsx
+   - help-for-charity.tsx
+   - General-Donation-Card.tsx
+   - ProvingGroundSection.tsx
+   - Module-card.tsx
+
+### Known Naming Issues (Not Breaking, Low Priority)
+
+1. **SVG Files** - Still have "FFC" prefixes but contain parade-appropriate icons:
+   - `/public/Svgs/FFC-Domains.svg` (used for Parade Planning icon)
+   - `/public/Svgs/FFC-Hosting.svg` (used for Community Engagement icon)
+   - `/public/Svgs/FFC-Consulting.svg` (used for Fundraising icon)
+   - **Note:** These files are actively used and contain appropriate icons, just have old naming
+
+2. **Component Folder Names** - Internal naming only, not user-facing:
+   - `SupportFreeForCharity` (contains parade donation content)
+   - `TheFreeForCharityTeam` (contains board member content)
+   - **Note:** Renaming would require import updates across multiple files
 
 ---
 
