@@ -66,7 +66,7 @@ const CharityHeroBackground = () => {
           <div className="relative w-full h-full">
             <Image
               src="/Images/freedom-rising-logo.jpg"
-              alt="Hero image"
+              alt="Freedom Rising USA - Statue of Liberty logo"
               fill
               className="object-contain"
               priority

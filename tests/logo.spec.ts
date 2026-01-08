@@ -8,8 +8,8 @@ import { test, expect } from '@playwright/test'
  * 2. Hero section image - validates the decorative hero image is displayed
  *
  * Note: The current implementation uses:
- * - Header logo: Placeholder image /Images/logo-placeholder.png with alt="Freedom Rising USA"
- * - Hero image: Local image /Images/figma-hero-img.png with alt="Hero image"
+ * - Header logo: /Images/freedom-rising-logo.jpg with alt="Freedom Rising USA"
+ * - Hero image: /Images/freedom-rising-logo.jpg with alt="Freedom Rising USA - Statue of Liberty logo"
  */
 
 test.describe('Logo and Image Visibility', () => {
@@ -33,13 +33,13 @@ test.describe('Logo and Image Visibility', () => {
     await page.goto('/')
 
     // Find the hero image
-    const heroImage = page.locator('img[alt="Hero image"]')
+    const heroImage = page.locator('img[alt="Freedom Rising USA - Statue of Liberty logo"]')
 
     // Verify the image exists
     await expect(heroImage).toBeVisible()
 
     // Verify the image has the correct alt text
-    await expect(heroImage).toHaveAttribute('alt', 'Hero image')
+    await expect(heroImage).toHaveAttribute('alt', 'Freedom Rising USA - Statue of Liberty logo')
   })
 
   test('both header logo and hero image should be present on the same page', async ({ page }) => {
@@ -48,7 +48,7 @@ test.describe('Logo and Image Visibility', () => {
 
     // Find both images
     const headerLogo = page.locator('header a[href="/"] img[alt="Freedom Rising USA"]')
-    const heroImage = page.locator('img[alt="Hero image"]')
+    const heroImage = page.locator('img[alt="Freedom Rising USA - Statue of Liberty logo"]')
 
     // Verify both are visible simultaneously
     await expect(headerLogo).toBeVisible()
